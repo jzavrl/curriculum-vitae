@@ -78,6 +78,9 @@
 				baffle(value).start().reveal(1000);
 			}
 		});
+
+		// Trigger window resize so waypoints gets the new positions
+		$(window).resize();
 	});
 
 })(jQuery);
