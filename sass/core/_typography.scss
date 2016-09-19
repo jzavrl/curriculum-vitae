@@ -1,0 +1,87 @@
+// ========================================
+//
+// @file _typography.scss
+// Base level typography, fonts, colors, sizes
+//
+// ========================================
+
+p {
+
+	&:last-child {
+	  margin-bottom: 0;
+	}
+}
+
+a {
+  transition: 0.4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-pink;
+  font-family: $font-montserrat;
+  margin: 0;
+
+  a {
+    color: inherit;
+
+    &:hover {
+    }
+  }
+}
+
+h1 {
+  @include rem('font-size', 128px);
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include rem('font-size', 24px);
+
+  font-family: $font-fira-mono;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+h3 {
+  @include rem('font-size', 24px);
+}
+
+h4 {
+  @include rem('font-size', 20px);
+}
+
+h5 {
+  @include rem('font-size', 18px);
+}
+
+h6 {
+  @include rem('font-size', 16px);
+}
+
+ul {
+  list-style: none;
+
+  li {
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ol {
+
+  li {
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
