@@ -28,6 +28,13 @@
 	// Run the parallax plugin first
 	$('.parallax').parallax(configs.parallax);
 
+	// The hero scroll button
+	$('#scroll-button').on('click', function() {
+		$('html, body').animate({
+			scrollTop: $('#bio').offset().top
+		}, 1000);
+	});
+
 	var particles = false,
 		_particles = $('.particles');
 
