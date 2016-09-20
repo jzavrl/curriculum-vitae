@@ -335,7 +335,35 @@
 
 .footer {
   margin: 60px 0;
+  padding: 0 20px;
+  position: relative;
   text-align: center;
+  z-index: 1;
+
+  .contact {
+    color: $color-gray;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+      background: $color-pink;
+      bottom: 0;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      transition: 0.4s;
+      width: 100%;
+    }
+
+    &:hover {
+      color: $color-pink;
+
+      &:after {
+        bottom: -2px;
+      }
+    }
+  }
 }
 
 .particles {
