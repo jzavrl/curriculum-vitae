@@ -175,10 +175,10 @@
     transform: translateX(-50%) translateY(80%);
 
     @include breakpoint($screen-xs-min) {
-      transform: translateX(-10%) translateY(100%);
+      transform: translateX(-30%) translateY(100%);
     }
     @include breakpoint($screen-sm-min) {
-      transform: translateX(-10%) translateY(70%);
+      transform: translateX(-30%) translateY(70%);
     }
   }
   .title {
@@ -222,6 +222,7 @@
     flex-wrap: wrap;
 
     .personal {
+      padding: 0 20px;
       width: 100%;
 
       @include breakpoint($screen-md-min) {
@@ -233,6 +234,7 @@
       }
     }
     .contact {
+      padding: 0 20px;
       width: 100%;
 
       @include breakpoint($screen-md-min) {

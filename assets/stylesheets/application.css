@@ -1183,14 +1183,14 @@ ol:last-child {
             transform: translateX(-50%) translateY(80%); }
     @media (min-width: 26.25rem) {
       .hero .bottom {
-        -webkit-transform: translateX(-10%) translateY(100%);
-            -ms-transform: translateX(-10%) translateY(100%);
-                transform: translateX(-10%) translateY(100%); } }
+        -webkit-transform: translateX(-30%) translateY(100%);
+            -ms-transform: translateX(-30%) translateY(100%);
+                transform: translateX(-30%) translateY(100%); } }
     @media (min-width: 48rem) {
       .hero .bottom {
-        -webkit-transform: translateX(-10%) translateY(70%);
-            -ms-transform: translateX(-10%) translateY(70%);
-                transform: translateX(-10%) translateY(70%); } }
+        -webkit-transform: translateX(-30%) translateY(70%);
+            -ms-transform: translateX(-30%) translateY(70%);
+                transform: translateX(-30%) translateY(70%); } }
   .hero .title {
     font-size: 3rem;
     left: 50%;
@@ -1233,6 +1233,7 @@ ol:last-child {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .bio .info .personal {
+    padding: 0 20px;
     width: 100%; }
     @media (min-width: 62rem) {
       .bio .info .personal {
@@ -1240,6 +1241,7 @@ ol:last-child {
     .bio .info .personal > ul {
       padding: 0; }
   .bio .info .contact {
+    padding: 0 20px;
     width: 100%; }
     @media (min-width: 62rem) {
       .bio .info .contact {
