@@ -24,7 +24,11 @@ body {
   color: $color-gray;
   font-family: $font-fira-mono;
   font-smoothing: antialiased;
-  @include rem('font-size', 16px);
+  font-size: 0.8rem;
+
+  @include breakpoint($screen-xs-min) {
+    font-size: 1rem;
+  }
 }
 
 *,

@@ -16,21 +16,58 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    max-width: 1200px;
+    padding: 0 20px;
     width: 100%;
 
+    @include breakpoint($screen-xs-min) {
+      max-width: $screen-xs-min;
+    }
+    @include breakpoint($screen-sm-min) {
+      max-width: $screen-sm-min;
+    }
+    @include breakpoint($screen-md-min) {
+      max-width: $screen-md-min;
+    }
+    @include breakpoint($screen-lg-min) {
+      max-width: $screen-lg-min;
+    }
+
     .left {
-      width: 30%;
+      width: 100%;
+
+      @include breakpoint($screen-sm-min) {
+        width: 50%;
+      }
+      @include breakpoint($screen-md-min) {
+        width: 40%;
+      }
+      @include breakpoint($screen-lg-min) {
+        width: 30%;
+      }
     }
     .right {
-      width: 70%;
+      width: 100%;
+
+      @include breakpoint($screen-sm-min) {
+        width: 50%;
+      }
+      @include breakpoint($screen-md-min) {
+        width: 60%;
+      }
+      @include breakpoint($screen-lg-min) {
+        width: 70%;
+      }
     }
   }
 
   .section-title {
-    margin-bottom: 20px;
+    margin: 20px 0;
     text-align: right;
     width: 100%;
+
+    @include breakpoint($screen-sm-min) {
+      margin: 0 0 20px 0;
+    }
 
     .title {
       line-height: 1;
@@ -38,7 +75,17 @@
     }
     .bottom {
       line-height: 1;
-      transform: translateX(-20%) translateY(-40px);
+      transform: translateY(-12px);
+
+      @include breakpoint($screen-xs-min) {
+        transform: translateX(-10%) translateY(-25px);
+      }
+      @include breakpoint($screen-sm-min) {
+        transform: translateX(-10%) translateY(-35px);
+      }
+      @include breakpoint($screen-md-min) {
+        transform: translateX(-20%) translateY(-40px);
+      }
     }
   }
 }
@@ -84,26 +131,48 @@
 
   .top,
   .bottom {
-    @include rem('font-size', 48px);
-
     color: $color-pink;
     font-family: $font-fira-mono;
+    font-size: 1rem;
     left: 50%;
     opacity: 0.7;
     position: absolute;
     text-transform: lowercase;
     top: 50%;
     white-space: nowrap;
+
+    @include breakpoint($screen-sm-min) {
+      font-size: 2rem;
+    }
+    @include breakpoint($screen-md-min) {
+      font-size: 2.5rem;
+    }
+    @include breakpoint($screen-lg-min) {
+      font-size: 3rem;
+    }
   }
   .top {
-    transform: translateX(-170%) translateY(-145%);
+    transform: translateX(-50%) translateY(-160%);
+
+    @include breakpoint($screen-xs-min) {
+      transform: translateX(-170%) translateY(-165%);
+    }
+    @include breakpoint($screen-sm-min) {
+      transform: translateX(-170%) translateY(-145%);
+    }
   }
   .bottom {
-    transform: translateX(-10%) translateY(70%);
+    transform: translateX(-50%) translateY(80%);
+
+    @include breakpoint($screen-xs-min) {
+      transform: translateX(-10%) translateY(100%);
+    }
+    @include breakpoint($screen-sm-min) {
+      transform: translateX(-10%) translateY(70%);
+    }
   }
   .title {
-    @include rem('font-size', 144px);
-
+    font-size: 3rem;
     left: 50%;
     line-height: 1;
     opacity: 0.9;
@@ -112,6 +181,19 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
+
+    @include breakpoint($screen-xs-min) {
+      font-size: 4rem;
+    }
+    @include breakpoint($screen-sm-min) {
+      font-size: 6rem;
+    }
+    @include breakpoint($screen-md-min) {
+      font-size: 8rem;
+    }
+    @include breakpoint($screen-lg-min) {
+      font-size: 9rem;
+    }
   }
   .splash {
     left: 50%;
@@ -127,21 +209,56 @@
 .bio {
   .info {
     display: flex;
+    flex-wrap: wrap;
+
+    .personal {
+      width: 100%;
+
+      @include breakpoint($screen-md-min) {
+        width: 50%;
+      }
+
+      > ul {
+        padding: 0;
+      }
+    }
+    .contact {
+      width: 100%;
+
+      @include breakpoint($screen-md-min) {
+        width: 50%;
+      }
+
+      > ul {
+        padding: 0;
+      }
+    }
   }
 
   .switcher {
-    margin: 40px 0;
+    margin: 30px 0;
     text-align: center;
 
     li {
       display: inline-block;
+      margin: 10px;
     }
   }
 
   .description {
     display: none;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
+
+    @include breakpoint($screen-sm-min) {
+      width: 70%;
+    }
+    @include breakpoint($screen-md-min) {
+      width: 60%;
+    }
+    @include breakpoint($screen-lg-min) {
+      width: 50%;
+    }
 
     &.active {
       display: block;
@@ -155,27 +272,52 @@
     flex-wrap: wrap;
     margin: 0 auto;
     padding: 0;
-    width: 80%;
+    width: 100%;
+
+    @include breakpoint($screen-sm-min) {
+      width: 80%;
+    }
+    @include breakpoint($screen-md-min) {
+      width: 60%;
+    }
+    @include breakpoint($screen-lg-min) {
+      width: 80%;
+    }
 
     li {
       padding: 20px;
-      width: 50%;
+      width: 100%;
+
+      @include breakpoint($screen-lg-min) {
+        width: 50%;
+      }
     }
   }
 
   .skill {
     @extend h1;
-    @include rem('font-size', 80px);
 
+    font-size: 2.5rem;
     color: $color-blue;
     line-height: 1;
     opacity: 0.4;
     text-align: right;
+
+    @include breakpoint($screen-xs-min) {
+      font-size: 3rem;
+    }
+    @include breakpoint($screen-sm-min) {
+      font-size: 5rem;
+    }
   }
   .detailed {
     @extend h2;
 
-    transform: translateY(-25px);
+    transform: translateY(-15px);
+
+    @include breakpoint($screen-sm-min) {
+      transform: translateY(-25px);
+    }
   }
 }
 
