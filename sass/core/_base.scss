@@ -6,12 +6,12 @@
 // ========================================
 
 ::selection {
-  background: lighten($color-black, 10%);
+  background: lighten($color-blue, 10%);
   color: $color-white;
 }
 
 ::-moz-selection {
-  background: lighten($color-black, 10%);
+  background: lighten($color-blue, 10%);
   color: $color-white;
 }
 

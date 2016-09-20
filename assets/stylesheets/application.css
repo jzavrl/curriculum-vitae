@@ -896,15 +896,15 @@ th {
     margin-left: 100%; } }
 
 ::-moz-selection {
-  background: #1a1a1a;
+  background: #6de1fc;
   color: white; }
 
 ::selection {
-  background: #1a1a1a;
+  background: #6de1fc;
   color: white; }
 
 ::-moz-selection {
-  background: #1a1a1a;
+  background: #6de1fc;
   color: white; }
 
 html {
