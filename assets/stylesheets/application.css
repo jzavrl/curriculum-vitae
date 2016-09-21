@@ -1121,23 +1121,23 @@ ol:last-child {
       height: 100%;
       width: 100%; }
       .hero .parallax li.top-container {
-        -webkit-animation: fade-in 2s ease-in-out 1s forwards;
-                animation: fade-in 2s ease-in-out 1s forwards;
+        -webkit-animation: fade-in 2s ease-in-out 0s forwards;
+                animation: fade-in 2s ease-in-out 0s forwards;
         opacity: 0;
         z-index: 1; }
       .hero .parallax li.title-container {
-        -webkit-animation: fade-in 2s ease-in-out 3s forwards;
-                animation: fade-in 2s ease-in-out 3s forwards;
+        -webkit-animation: fade-in 2s ease-in-out 2s forwards;
+                animation: fade-in 2s ease-in-out 2s forwards;
         opacity: 0;
         z-index: 1; }
       .hero .parallax li.bottom-container {
-        -webkit-animation: fade-in 2s ease-in-out 5s forwards;
-                animation: fade-in 2s ease-in-out 5s forwards;
+        -webkit-animation: fade-in 2s ease-in-out 4s forwards;
+                animation: fade-in 2s ease-in-out 4s forwards;
         opacity: 0;
         z-index: 1; }
       .hero .parallax li.splash-container {
-        -webkit-animation: fade-in 2s ease-in-out 2.5s forwards;
-                animation: fade-in 2s ease-in-out 2.5s forwards;
+        -webkit-animation: fade-in 2s ease-in-out 1.5s forwards;
+                animation: fade-in 2s ease-in-out 1.5s forwards;
         opacity: 0;
         z-index: 0; }
   .hero .top,
