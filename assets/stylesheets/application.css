@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import 'https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat';
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Montserrat:wght@800&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -937,8 +937,27 @@ p:last-child {
   margin-bottom: 0; }
 
 a {
-  -webkit-transition: 0.4s;
-  transition: 0.4s; }
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+  a.link {
+    color: #37474F;
+    position: relative;
+    text-decoration: none; }
+    a.link:before {
+      background: #F50057;
+      bottom: 0;
+      content: '';
+      height: 6px;
+      left: 0;
+      position: absolute;
+      -webkit-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
+      width: 100%;
+      z-index: -1; }
+    a.link:hover {
+      color: white; }
+      a.link:hover:before {
+        height: 19px; }
 
 h1, .skills .skill,
 h2,
@@ -951,7 +970,8 @@ h6 {
   font-family: "Montserrat", sans-serif;
   margin: 0; }
   h1 a, .skills .skill a,
-  h2 a, .skills .detailed a,
+  h2 a,
+  .skills .detailed a,
   h3 a,
   h4 a,
   h5 a,
@@ -960,7 +980,7 @@ h6 {
 
 h1, .skills .skill {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase; }
   @media (min-width: 26.25rem) {
     h1, .skills .skill {
@@ -972,13 +992,17 @@ h1, .skills .skill {
     h1, .skills .skill {
       font-size: 8rem; } }
 
-h2, .skills .detailed {
+
+h2,
+.skills .detailed {
   font-size: 1rem;
   font-family: "Fira Mono", monospace;
   font-weight: 400;
   text-transform: lowercase; }
   @media (min-width: 48rem) {
-    h2, .skills .detailed {
+    
+    h2,
+    .skills .detailed {
       font-size: 1.5rem; } }
 
 ul {
@@ -1283,15 +1307,15 @@ ol:last-child {
   width: 100%; }
   @media (min-width: 48rem) {
     .skills .skill-list {
-      width: 80%; } }
+      width: 90%; } }
   @media (min-width: 62rem) {
     .skills .skill-list {
       width: 60%; } }
   @media (min-width: 75rem) {
     .skills .skill-list {
-      width: 80%; } }
+      width: 90%; } }
   .skills .skill-list li {
-    padding: 20px;
+    padding: 30px;
     width: 100%; }
     @media (min-width: 75rem) {
       .skills .skill-list li {
@@ -1326,35 +1350,17 @@ ol:last-child {
   position: relative;
   text-align: center;
   z-index: 1; }
-  .footer .contact {
-    color: #37474F;
-    position: relative;
-    text-decoration: none; }
-    .footer .contact:after {
-      background: #F50057;
-      bottom: 0;
-      content: '';
-      height: 5px;
-      left: 0;
-      position: absolute;
-      -webkit-transition: 0.4s;
-      transition: 0.4s;
-      width: 100%; }
-    .footer .contact:hover {
-      color: #F50057; }
-      .footer .contact:hover:after {
-        bottom: -2px; }
 
 .particles {
   bottom: 0;
-  height: 100vh;
+  height: 150vh;
   opacity: 0.2;
   position: fixed;
   right: 0;
   -webkit-transform: scale(0.5) translateX(50%) translateY(50%);
       -ms-transform: scale(0.5) translateX(50%) translateY(50%);
           transform: scale(0.5) translateX(50%) translateY(50%);
-  width: 100vw;
+  width: 150vw;
   z-index: 0; }
 
 /*# sourceMappingURL=../stylesheets/application.css.map */

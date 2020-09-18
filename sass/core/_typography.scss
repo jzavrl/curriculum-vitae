@@ -6,14 +6,39 @@
 // ========================================
 
 p {
-
 	&:last-child {
 	  margin-bottom: 0;
 	}
 }
 
 a {
-  transition: 0.4s;
+  transition: 0.2s ease-in-out;
+
+  &.link {
+    color: $color-gray;
+    position: relative;
+    text-decoration: none;
+
+    &:before {
+      background: $color-pink;
+      bottom: 0;
+      content: '';
+      height: 6px;
+      left: 0;
+      position: absolute;
+      transition: 0.2s ease-in-out;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: $color-white;
+
+      &:before {
+        height: 19px;
+      }
+    }
+  }
 }
 
 h1,
@@ -28,15 +53,12 @@ h6 {
 
   a {
     color: inherit;
-
-    &:hover {
-    }
   }
 }
 
 h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
 
   @include breakpoint($screen-xs-min) {

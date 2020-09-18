@@ -11,13 +11,13 @@
 			frictionY: 0.8
 		},
 		particles: {
-			density: 70000,
-			dotColor: '#37474F',
-			lineColor: '#37474F',
+			density: 90000,
+			dotColor: '#9dc1d1',
+			lineColor: '#9dc1d1',
 			directionX: 'center',
 			directionY: 'center',
 			particleRadius: 8,
-			lineWidth: 2,
+			lineWidth: 4,
 			parallax: false,
 			proximity: 500,
 			minSpeedX: 0.6,
@@ -26,7 +26,8 @@
 	};
 
 	// Run the parallax plugin first
-	$('.parallax').parallax(configs.parallax);
+	var scene = document.getElementById('parallax');
+	new Parallax(scene, configs.parallax);
 
 	// The hero scroll button
 	$('#scroll-button').on('click', function() {
