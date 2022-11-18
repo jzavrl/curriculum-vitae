@@ -20,14 +20,13 @@ html {
 }
 
 body {
-  background: $color-white;
+  background: $color-fade;
   color: $color-gray;
   font-family: $font-fira-mono;
-  font-smoothing: antialiased;
-  font-size: 0.8rem;
+  font-size: rem(16px);
 
   @include breakpoint($screen-xs-min) {
-    font-size: 1rem;
+    font-size: rem(18px);
   }
 }
 
@@ -43,4 +42,9 @@ img {
   margin: 0;
   max-width: 100%;
   transition: 0.4s;
+}
+
+p {
+  margin: 1.5rem 0;
+  line-height: 1.5rem;
 }

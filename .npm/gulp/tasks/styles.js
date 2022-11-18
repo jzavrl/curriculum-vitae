@@ -18,7 +18,7 @@ module.exports = function(gulp, $, config, messages) {
   			errorHandler: messages.error
   		}))
   		.pipe($.sourcemaps.init())
-  		.pipe($.sass(config.sass.config))
+  		.pipe($.sass(require('node-sass'))(config.sass.config))
   		.pipe($.autoprefixer({
   			browsers: config.sass.autoprefixer
   		}))

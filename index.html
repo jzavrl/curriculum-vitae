@@ -27,6 +27,9 @@
     <li class="layer bottom-container" data-depth="0.20">
       <span class="bottom">and I solve digital problems</span>
     </li>
+    <li class="layer oval-container" data-depth="0.15">
+      <img class="oval" src="assets/images/layout/oval-blue.svg">
+    </li>
     <li class="layer splash-container" data-depth="0.10">
       <img class="splash" src="assets/images/layout/splash.png">
     </li>
@@ -46,42 +49,42 @@
       <div class="section-title">
         <h1 class="title">About</h1>
         <h2 class="bottom waypoint-reveal">just to get to know me better.</h2>
+        <img class="oval" src="assets/images/layout/oval-gray.svg">
       </div>
       <div class="info">
         <div class="personal">
           <ul>
-            <li>$personal = [</li>
+            <li>new <strong>PersonalInfo</strong>([</li>
             <li>
               <ul>
                 <li>'name' => 'Jan Zavrl',</li>
-                <li>'location' => 'Ljubljana, SI',</li>
-                <li>'skills' => [</li>
-                <li>
-                  <ul>
-                    <li>'backend developer',</li>
-                    <li>'frontend developer',</li>
-                    <li>'devops',</li>
-                    <li>'ux/ui designer',</li>
-                  </ul>
-                </li>
-                <li>],</li>
+                <li>'location' => 'Ljubljana, Slovenia',</li>
               </ul>
             </li>
-            <li>];</li>
+            <li>])-><strong>addSkills</strong>([</li>
+            <li>
+              <ul>
+                <li>'backend_developer' => TRUE,</li>
+                <li>'frontend_developer' => TRUE,</li>
+                <li>'devops' => TRUE,</li>
+                <li>'ux_ui' => TRUE,</li>
+              </ul>
+            </li>
+            <li>]);</li>
           </ul>
         </div>
         <div class="contact">
           <ul>
-            <li>$contact = [</li>
+            <li>new <strong>ContactInfo</strong>([</li>
             <li>
               <ul>
-                <li>'email' => 'jzavrl[at]gmail.com',</li>
-                <li>'twitter' => 'jnzavrl',</li>
-                <li>'drupal' => 'jzavrl',</li>
-                <li>'github' => 'jzavrl',</li>
+                <li>'email' => <a class="link" href="mailto:jzavrl@gmail.com">'jzavrl@gmail.com'</a>,</li>
+                <li>'linkedin' => <a class="link" href="https://www.linkedin.com/in/janzavrl" target="_blank">'linkedin.com/in/janzavrl'</a>,</li>
+                <li>'drupal' => <a class="link" href="https://www.drupal.org/u/jzavrl" target="_blank">'drupal.org/u/jzavrl'</a>,</li>
+                <li>'github' => <a class="link" href="https://github.com/jzavrl" target="_blank">'github.com/jzavrl'</a>,</li>
               </ul>
             </li>
-            <li>];</li>
+            <li>]);</li>
           </ul>
         </div>
       </div>
@@ -96,22 +99,26 @@
         </li>
       </ul>
       <article id="short" class="description short-description active">
-        <p>Worked in a digital agency, a development studio and founded my own company. 11 years of experience in Drupal, backend/frontend development, UX/UI design, devops. Self-taught. Won awards. Attended and organised Drupal events. Spoke in them.</p>
+        <p>Worked in a digital agency, a development studio and founded my own company. 12 years of experience in Drupal, backend/frontend development, UX/UI design, devops. Self-taught. Won awards. Attended and organised Drupal events. Spoke in them.</p>
         <p>Good food, good company, lots of sports.</p>
         <p><i>That wasn't so bad, right?</i></p>
       </article>
       <article id="long" class="description long-description">
-        <p>My path started in 2010 when I joined the ranks of ENKI, a web agency, as a web designer. Quickly I moved to development, more specifically to Drupal as a frontend and backend developer. It became an instant connection which is still very much strong to this day. With ENKI we received several digital awards for specific projects as well as an overall best digital agency in Slovenia for several years in a row.</p>
+        <p>My path started in 2010 when I joined the ranks of ENKI, a web agency, as a web designer. Quickly, I moved to development, more specifically to Drupal as a frontend and backend developer. It became an instant connection which is still very much strong to this day. With ENKI, we received several digital awards for specific projects as well as an overall best digital agency in Slovenia for several years in a row.</p>
         <p>After ENKI, I founded my own company called Iuvo where I worked on full scope projects for clients all around the world. During this time I also received the prestigious Site of the day and Honorable mention awards on CSS Design Awards and Awwwards sites.</p>
         <p>Later on, I crossed paths and joined forces with AGILEDROP where my role became the team lead on projects spanning from e-commerce to big corporate websites to completely custom web applications.</p>
-        <p>Currently working as a senior developer at a London based studio called NDP, where I lead, plan and develop complex web sites and applications, working in sectors ranging from corporate, education. charity and all the way to medicine and health care.</p>
-        <p>My focus was always Drupal and my goal was to deliver the best possible solution in terms of UX/UI as well as code structure.</p>
-        <p>I'm also self-taught, so you can pretty much throw anything at me and I'll find my way around it.</p>
+        <p>Moving on I joined a London based studio called NDP as a senior developer, where I lead, planed and developed complex websites and applications, working in sectors ranging from corporate, education. charity and all the way to medicine and health care.</p>
+        <p>In between I also passed the tests and interviews they threw at me at Toptal, where I became one of their Drupal developers <a class="link" href="https://www.toptal.com/resume/jan-zavrl" target="_blank">for hire</a>. They do pride themselves on hiring the top 3% freelance talents in the world, so I'm definitely mentioning that.</p>
+        <p>My last adventure was with the amazing people at Dropsolid, a Ghent based digital agency, where I took on challenges from the biggest clients in the country, as well as beverages from Belgium's world known breweries.</p>
+        <p>My focus was always Drupal and my goal was to deliver the best possible solution in terms of UX/UI as well as code structure, and making sure I enjoy every minute of it.</p>
+        <p>I'm also self-taught, so you can bet I can navigate my way around any obstacle you can throw at me better than a Roomba vacuum cleaner.</p>
         <p>During this time I have also attended several Drupal Camps and Drupal Dev Days across Europe where in some of them I also gave a session. I have also been involved in my local Drupal community, attending and helping organise meetups and camps.</p>
-        <p>Have I mentioned I'm also a certified Drupal 8 Grand Master? No? Well, I'm a <a class="link" href="https://certification.acquia.com/user/4429" target="_blank">certified Drupal 8 Grand Master</a>. There.</p>
-        <p>Other than that I enjoy good food - including preparing it, with a side of a good company. I'm also passionate about sports. Watch it, play it, you name it. I also play football on a club level. Now you might be wondering which one. I'll give you a hint - it involves a round ball which you kick with your feet. Hence, the name.</p>
-        <p>You wish you went for the shorter version, don't you?</p>
+        <p>Have I mentioned I'm also a certified Drupal 8 Grand Master? No? Well, I'm a <a class="link" href="https://certification.acquia.com/user/4429" target="_blank">certified</a> Drupal 8 Grand Master. There.</p>
+        <p>Other than that I enjoy good food - including preparing it, with a side of a good company. I'm also passionate about sports. Watch it, play it, discuss it, you name it. Currently, my heart lies between two wheels of a road bike, where I sweat, curse and laugh my way up and down the local hills and an occasional race here and there. I also played football on a club level. Now you might be wondering which one. I'll give you a hint - it involves a round ball which you kick with your feet. Hence, the name.</p>
+        <p>I also mix it up with some tennis, gym, hiking, kite-surfing, cross country skiing, ... Well, let's just say, Drupal has its fair share of stressful moments, which need to be neutralized, right?.</p>
+        <p><i>You wish you went for the shorter version, don't you?</i></p>
       </article>
+      <img class="oval" src="assets/images/layout/oval-gray.svg">
     </div>
   </article>
 </section>
@@ -121,11 +128,12 @@
     <div class="section-title">
       <h1 class="title">Skills</h1>
       <h2 class="bottom waypoint-reveal">the aces up my sleeve.</h2>
+      <img class="oval" src="assets/images/layout/oval-gray.svg">
     </div>
     <ul class="skill-list">
       <li>
         <div class="skill">Drupal</div>
-        <div class="detailed waypoint-reveal">drupal 7, drupal 8, build, module development, theming, architecture, migration, integration</div>
+        <div class="detailed waypoint-reveal">drupal 7/8/9, site build, module development, theming, architecture, migration, integration</div>
       </li>
       <li>
         <div class="skill">Backend</div>
@@ -133,7 +141,7 @@
       </li>
       <li>
         <div class="skill">Frontend</div>
-        <div class="detailed waypoint-reveal">sass, less, javascript, jquery, node, gulp, grunt, angular</div>
+        <div class="detailed waypoint-reveal">sass, less, javascript, jquery, node, gulp, grunt, angular, vue</div>
       </li>
       <li>
         <div class="skill">Devops</div>
