@@ -1,10 +1,8 @@
-export default function Skill() {
+export default function Skill({title, technologies}) {
   return (
     <>
-      <div className="skill">Drupal</div>
-      <div className="detailed waypoint-reveal">drupal 7/8/9, site build, module development, theming, architecture,
-        migration, integration
-      </div>
+      <div className="skill">{title}</div>
+      <div className="detailed waypoint-reveal">{technologies.join(', ')}</div>
     </>
   )
 }

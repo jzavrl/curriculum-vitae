@@ -1,11 +1,14 @@
 import Bio from "./components/sections/Bio";
 import Skills from "./components/sections/Skills";
+import { DataWrapper } from "./context/DataContext";
 
 function App() {
   return (
     <>
-      <Bio />
-      <Skills />
+      <DataWrapper>
+        <Bio />
+        <Skills />
+      </DataWrapper>
     </>
   )
 }
