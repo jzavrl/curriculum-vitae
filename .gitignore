@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+.npm/node_modules
+.npm/bower_components
 /.pnp
 .pnp.js
 
