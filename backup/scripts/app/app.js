@@ -28,12 +28,12 @@
 	// Run the parallax plugin first
 	$('.parallax').parallax(configs.parallax);
 
-	// The hero scroll button
-	$('#scroll-button').on('click', function() {
-		$('html, body').animate({
-			scrollTop: $('#bio').offset().top
-		}, 1000);
-	});
+	// // The hero scroll button
+	// $('#scroll-button').on('click', function() {
+	// 	$('html, body').animate({
+	// 		scrollTop: $('#bio').offset().top
+	// 	}, 1000);
+	// });
 
 	var particles = false,
 		_particles = $('.particles');
@@ -55,36 +55,36 @@
 	});
 
 	// Make specific texts reveal after going into viewport
-	$('.waypoint-reveal').waypoint(function(direction) {
-		if (direction == 'down') {
-			baffle(this.element).start().reveal(2000);
-		}
-	}, {
-		offset: '100%'
-	});
+	// $('.waypoint-reveal').waypoint(function(direction) {
+	// 	if (direction == 'down') {
+	// 		baffle(this.element).start().reveal(2000);
+	// 	}
+	// }, {
+	// 	offset: '100%'
+	// });
 
 	// Switch between description fields
 	$('#switcher a').on('click', function() {
-		var _this = $(this),
-			_target = _this.data('toggle-target');
+		// var _this = $(this),
+		// 	_target = _this.data('toggle-target');
+		//
+		// // Change the button style
+		// _this.parent().siblings().find('a.active').removeClass('active');
+		// _this.addClass('active');
+		//
+		// // Show and hide the description
+		// $('.story .description.active').removeClass('active');
+		// $('.story #' + _target).addClass('active');
 
-		// Change the button style
-		_this.parent().siblings().find('a.active').removeClass('active');
-		_this.addClass('active');
-
-		// Show and hide the description
-		$('.story .description.active').removeClass('active');
-		$('.story #' + _target).addClass('active');
-
-		$('.story #' + _target).children().each(function(index, value) {
-			// There might be some additional tags inside so check for those too
-			var children = $(value).children();
-			if (children.length == 1) {
-				baffle(children[0]).start().reveal(1000);
-			} else {
-				baffle(value).start().reveal(1000);
-			}
-		});
+		// $('.story #' + _target).children().each(function(index, value) {
+		// 	// There might be some additional tags inside so check for those too
+		// 	var children = $(value).children();
+		// 	if (children.length == 1) {
+		// 		baffle(children[0]).start().reveal(1000);
+		// 	} else {
+		// 		baffle(value).start().reveal(1000);
+		// 	}
+		// });
 
 		// Trigger window resize so waypoints gets the new positions
 		$(window).resize();

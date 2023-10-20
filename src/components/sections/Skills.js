@@ -5,12 +5,12 @@ import Skill from "../Skill";
 import { DataContext } from "../../context/DataContext";
 
 export default function Skills() {
-  const {skills} = useContext(DataContext);
+  const { skills, sections } = useContext(DataContext);
 
   return (
     <Section id='skills'>
       <article className="content">
-        <SectionTitle title='Skills' description='the aces up my sleeve.'/>
+        <SectionTitle title={sections.skills.title} description={sections.skills.description} />
         <ul className="skill-list">
           {Object.entries(skills).map(([skill, technologies]) => {
             return <li><Skill title={skill} technologies={technologies} /></li>

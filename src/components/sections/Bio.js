@@ -1,19 +1,23 @@
+import { useContext } from "react";
 import ProfileImage from "../../assets/images/layout/profile.png";
 import SectionTitle from "../SectionTitle";
 import Section from "../Section";
 import Story from "../Story";
+import { DataContext } from "../../context/DataContext";
 
 export default function Bio() {
+  const { sections: { bio } } = useContext(DataContext);
+
   return (
     <Section id='bio'>
       <article className="content">
         <div className="left">
           <div className="profile">
-            <img src={ProfileImage}/>
+            <img src={ProfileImage} />
           </div>
         </div>
         <div className="right">
-          <SectionTitle title='About' description='just to get to know me better.'/>
+          <SectionTitle title={bio.title} description={bio.description} />
           <div className="info">
             <div className="personal">
               <ul>

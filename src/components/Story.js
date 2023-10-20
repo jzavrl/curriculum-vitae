@@ -18,10 +18,12 @@ export default function Story() {
       />
       <Description
         name="short"
+        showStory={showStory}
         toggleClasses={toggleClasses}
       />
       <Description
         name="long"
+        showStory={showStory}
         toggleClasses={toggleClasses}
       />
       <img className="oval" src={OvalGray}/>
