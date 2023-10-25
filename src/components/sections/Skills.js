@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Section from "../Section";
+import Section from "../section/Section";
 import SectionTitle from "../SectionTitle";
 import Skill from "../Skill";
 import { DataContext } from "../../context/DataContext";

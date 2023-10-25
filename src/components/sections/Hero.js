@@ -1,12 +1,22 @@
+import { useContext, useEffect } from "react";
 import OvalBlue from '../../assets/images/layout/oval-blue.svg';
 import Splash from '../../assets/images/layout/splash.png';
+import Parallax from 'parallax-js';
+import { DataContext } from "../../context/DataContext";
+import './hero.scss';
 
 export default function Hero() {
+  const { parallax } = useContext(DataContext);
   const handleClick = () => {
     document.getElementById('bio').scrollIntoView({
       behavior: 'smooth'
     });
   }
+
+  useEffect(() => {
+    const scene = new Parallax(document.getElementById('parallax'), parallax);
+    return () => scene.destroy();
+  }, []);
 
   return (
     <section id="hero" className="section hero">
@@ -28,7 +38,7 @@ export default function Hero() {
         </li>
       </ul>
 
-      <button className="button scroll-button" onClick={handleClick}>let me show you what I am all about</button>
+      <button className="button" onClick={handleClick}>let me show you what I am all about</button>
     </section>
   )
 }

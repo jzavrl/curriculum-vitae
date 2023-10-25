@@ -1,0 +1,95 @@
+@import "../../assets/sass/core/functions";
+@import "../../assets/sass/core/settings";
+@import "../../assets/sass/vendor/breakpoint";
+
+.section {
+  min-height: 100vh;
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+
+    @include breakpoint($screen-xs-min) {
+      max-width: $screen-xs-min;
+    }
+    @include breakpoint($screen-sm-min) {
+      max-width: $screen-sm-min;
+    }
+    @include breakpoint($screen-md-min) {
+      max-width: $screen-md-min;
+    }
+    @include breakpoint($screen-lg-min) {
+      max-width: $screen-lg-min;
+    }
+
+    .left {
+      width: 100%;
+
+      @include breakpoint($screen-sm-min) {
+        width: 50%;
+      }
+    }
+    .right {
+      width: 100%;
+
+      @include breakpoint($screen-sm-min) {
+        width: 50%;
+      }
+    }
+  }
+
+  .section-title {
+    margin: 20px 0;
+    position: relative;
+    text-align: right;
+    width: 100%;
+
+    @include breakpoint($screen-sm-min) {
+      margin: 0 0 20px 0;
+    }
+
+    .title {
+      line-height: 1;
+      opacity: 0.1;
+    }
+    .bottom {
+      line-height: 1;
+      transform: translateY(-12px);
+
+      @include breakpoint($screen-xs-min) {
+        transform: translateX(-10%) translateY(-25px);
+      }
+      @include breakpoint($screen-sm-min) {
+        transform: translateX(-10%) translateY(-35px);
+      }
+      @include breakpoint($screen-md-min) {
+        transform: translateX(-20%) translateY(-40px);
+      }
+    }
+
+    .oval {
+      left: 10%;
+      position: absolute;
+      transform: rotate(170deg);
+      top: 50%;
+      z-index: -1;
+    }
+  }
+
+  .scroll-button {
+    animation: fade-in 2s ease-in-out 7s forwards;
+    bottom: 20px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+}

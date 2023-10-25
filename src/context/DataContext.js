@@ -3,6 +3,7 @@ import skills from "../content/skills.json";
 import about from "../content/about.json";
 import sections from "../content/sections.json";
 import particles from "../content/particles.json";
+import parallax from "../content/parallax.json";
 
 export const DataContext = createContext({});
 
@@ -13,7 +14,8 @@ export const DataWrapper = ({children}) => {
         skills: skills,
         about: about,
         sections: sections,
-        particles: particles
+        particles: particles,
+        parallax: parallax
       }}
     >
       {children}

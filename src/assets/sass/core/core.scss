@@ -1,0 +1,15 @@
+// ========================================
+//
+// @file _core.scss
+// Main core import file
+//
+// ========================================
+
+@import '../vendor/vendor';
+@import 'animations';
+@import 'mixins';
+@import 'functions';
+@import 'settings';
+@import 'grid/grid';
+@import 'base';
+@import 'typography';

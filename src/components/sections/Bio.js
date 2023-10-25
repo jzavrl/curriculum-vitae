@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import ProfileImage from "../../assets/images/layout/profile.png";
 import SectionTitle from "../SectionTitle";
-import Section from "../Section";
+import Section from "../section/Section";
 import Story from "../Story";
 import { DataContext } from "../../context/DataContext";
 
