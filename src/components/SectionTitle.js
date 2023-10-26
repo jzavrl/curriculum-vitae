@@ -1,4 +1,4 @@
-import OvalGray from '../assets/images/layout/oval-gray.svg';
+import OvalGray from '../assets/images/oval-gray.svg';
 import WaypointBaffle from "./WaypointBaffle";
 
 export default function SectionTitle({ title, description }) {

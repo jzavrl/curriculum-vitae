@@ -1,4 +1,4 @@
-import {useContext, useEffect} from "react";
+import { useContext, useEffect } from "react";
 import { DataContext } from "../context/DataContext";
 import ReactMarkdown from "react-markdown";
 import baffle from 'baffle';

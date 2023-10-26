@@ -1,0 +1,15 @@
+.particles {
+  bottom: 0;
+  height: 140vh;
+  width: 140vw;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+  transform: scale(0.5) translateX(50%) translateY(50%);
+  transition: 0.8s ease-in-out;
+  z-index: 0;
+
+  &.hidden {
+    opacity: 0;
+  }
+}

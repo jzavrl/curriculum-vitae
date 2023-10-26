@@ -1,0 +1,40 @@
+{
+  "personal": {
+    "title": "PersonalInfo",
+    "content": {
+      "name": "Jan Zavrl",
+      "location": "Ljubljana, Slovenia"
+    }
+  },
+  "skills": {
+    "title": "addSkills",
+    "content": {
+      "drupal": "TRUE",
+      "backend_developer": "TRUE",
+      "fronted_developer": "TRUE",
+      "devops": "TRUE",
+      "ux_ui": "TRUE"
+    }
+  },
+  "contact": {
+    "title": "ContactInfo",
+    "content": {
+      "email": {
+        "link": "mailto:jzavrl@gmail.com",
+        "title": "jzavrl@gmail.com"
+      },
+      "linkedin": {
+        "link": "https://www.linkedin.com/in/janzavrl",
+        "title": "linkedin.com/in/janzavrl"
+      },
+      "drupal": {
+        "link": "https://www.drupal.org/u/jzavrl",
+        "title": "drupal.org/u/jzavrl"
+      },
+      "github": {
+        "link": "https://github.com/jzavrl",
+        "title": "github.com/jzavrl"
+      }
+    }
+  }
+}

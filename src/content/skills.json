@@ -1,8 +1,8 @@
 {
-  "drupal": ["drupal 7/8/9/10", "site build", "module development", "theming", "architecture", "migration", "integration"],
-  "backend": ["php", "mysql", "git", "solr", "redis"],
-  "frontend": ["sass", "less", "javascript", "jquery", "node", "gulp", "grunt", "react"],
-  "devops": ["linux", "apache", "nginx", "ubuntu", "vagrant", "docker", "ci"],
+  "drupal": ["site build", "module development", "theming", "architecture", "migration", "integration"],
+  "backend": ["php", "mysql", "git", "composer", "solr", "redis"],
+  "frontend": ["sass", "less", "javascript", "jquery", "node", "gulp", "npm", "react"],
+  "devops": ["linux", "apache", "nginx", "ubuntu", "vagrant", "docker", "ci", "cdn"],
   "design": ["ux", "ui", "photoshop", "illustrator", "affinity designer"],
   "certified": ["triple certified", "developer", "frontend specialist", "backend specialist"]
 }

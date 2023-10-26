@@ -3,6 +3,7 @@ import Section from "../section/Section";
 import SectionTitle from "../SectionTitle";
 import Skill from "../Skill";
 import { DataContext } from "../../context/DataContext";
+import './skills.scss';
 
 export default function Skills() {
   const { skills, sections } = useContext(DataContext);

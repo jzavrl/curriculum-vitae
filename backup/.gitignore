@@ -1,8 +1,0 @@
-# Software files
-.idea
-
-# Dependency directories
-node_modules
-
-# macOS
-.DS_store

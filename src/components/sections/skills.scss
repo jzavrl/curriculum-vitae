@@ -1,0 +1,59 @@
+@import "../../assets/sass/core/functions";
+@import "../../assets/sass/core/settings";
+@import "../../assets/sass/vendor/breakpoint";
+@import "../../assets/sass/core/typography";
+
+.skills {
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    @include breakpoint($screen-sm-min) {
+      width: 90%;
+    }
+    @include breakpoint($screen-md-min) {
+      width: 60%;
+    }
+    @include breakpoint($screen-lg-min) {
+      width: 90%;
+    }
+
+    li {
+      padding: 30px;
+      width: 100%;
+
+      @include breakpoint($screen-lg-min) {
+        width: 50%;
+      }
+    }
+  }
+
+  .skill {
+    @extend h1;
+
+    font-size: 2.5rem;
+    color: $color-blue;
+    line-height: 1;
+    opacity: 0.4;
+    text-align: right;
+
+    @include breakpoint($screen-xs-min) {
+      font-size: 3rem;
+    }
+    @include breakpoint($screen-sm-min) {
+      font-size: 5rem;
+    }
+  }
+  .detailed {
+    @extend h2;
+
+    transform: translateY(-15px);
+
+    @include breakpoint($screen-sm-min) {
+      transform: translateY(-25px);
+    }
+  }
+}

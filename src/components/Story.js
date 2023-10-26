@@ -1,5 +1,5 @@
 import { useState } from "react";
-import OvalGray from '../assets/images/layout/oval-gray.svg';
+import OvalGray from '../assets/images/oval-gray.svg';
 import Switcher from "./Switcher";
 import Description from "./Description";
 
@@ -26,7 +26,7 @@ export default function Story() {
         showStory={showStory}
         toggleClasses={toggleClasses}
       />
-      <img className="oval" src={OvalGray}/>
+      <img className="oval" src={OvalGray} />
     </div>
   )
 }

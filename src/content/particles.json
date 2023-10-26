@@ -1,5 +1,5 @@
 {
-  "density": 70000,
+  "density": 90000,
   "dotColor": "#d5e4e6",
   "lineColor": "#d5e4e6",
   "directionX": "center",
@@ -8,6 +8,6 @@
   "lineWidth": 4,
   "parallax": false,
   "proximity": 500,
-  "minSpeedX": 0.6,
-  "minSpeedY": 0.6
+  "minSpeedX": 0.4,
+  "minSpeedY": 0.4
 }
