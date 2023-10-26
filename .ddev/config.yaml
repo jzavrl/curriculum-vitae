@@ -12,7 +12,7 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
-nodejs_version: "18"
+nodejs_version: "20"
 web_extra_exposed_ports:
   - name: nodejs
     container_port: 3000
@@ -20,7 +20,7 @@ web_extra_exposed_ports:
     https_port: 3000
 web_extra_daemons:
   - name: "nodejs"
-    command: "yarn install && yarn start"
+    command: "corepack enable && yarn set version stable && yarn install && yarn start"
     directory: /var/www/html
 
 # Key features of DDEV's config.yaml:
