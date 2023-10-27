@@ -8,7 +8,7 @@ export default function SectionTitle({ title, description }) {
       <WaypointBaffle>
         <h2 className="bottom">{description}</h2>
       </WaypointBaffle>
-      <img className="oval" src={OvalGray} />
+      <img className="oval" src={OvalGray} alt="oval gradient" />
     </div>
   )
 }

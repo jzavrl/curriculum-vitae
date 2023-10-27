@@ -26,7 +26,7 @@ export default function Story() {
         showStory={showStory}
         toggleClasses={toggleClasses}
       />
-      <img className="oval" src={OvalGray} />
+      <img className="oval" src={OvalGray} alt="oval gradient" />
     </div>
   )
 }

@@ -44,10 +44,10 @@ export default function Hero() {
               <span className="bottom">and I solve digital problems</span>
             </li>
             <li className="layer oval-container" data-depth="0.15">
-              <img className="oval" src={OvalBlue} />
+              <img className="oval" src={OvalBlue} alt="oval gradient" />
             </li>
             <li className="layer splash-container" data-depth="0.10">
-              <img className="splash" src={Splash} />
+              <img className="splash" src={Splash} alt="splash visual" />
             </li>
           </ul>
 
