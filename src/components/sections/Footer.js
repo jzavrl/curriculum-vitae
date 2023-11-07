@@ -1,9 +1,11 @@
-import './footer.scss';
-
-export default function Footer() {
-  return (
-    <footer className="footer">
-      <p>Everything looking good so far? Then lets schedule a <a href="mailto:jzavrl@gmail.com" title="jzavrl@gmail.com" target="_blank">call</a> or grab a cup of coffee.</p>
-    </footer>
-  )
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./footer.scss");
+function Footer() {
+    return (React.createElement("footer", { className: "footer" },
+        React.createElement("p", null,
+            "Everything looking good so far? Then lets schedule a ",
+            React.createElement("a", { href: "mailto:jzavrl@gmail.com", title: "jzavrl@gmail.com", target: "_blank" }, "call"),
+            " or grab a cup of coffee.")));
 }
+exports.default = Footer;
