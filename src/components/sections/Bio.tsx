@@ -8,8 +8,7 @@ import './bio.scss';
 import { GlobalContext } from "../../services/types.service";
 
 export default function Bio() {
-  const { sections: { bio } } = useContext<GlobalContext>(DataContext);
-  const { personal } = useContext<GlobalContext>(DataContext);
+  const { sections: { bio }, personal } = useContext<GlobalContext>(DataContext);
 
   return (
     <Section id='bio'>
@@ -28,7 +27,7 @@ export default function Bio() {
                 <li>
                   <ul>
                     {Object.entries(personal.personal.content as Array<string>).map(([key, data]) => {
-                      return <li>'{key}' =&gt; '{data}',</li>;
+                      return <li key={key}>'{key}' =&gt; '{data}',</li>;
                     })}
                   </ul>
                 </li>
@@ -36,7 +35,7 @@ export default function Bio() {
                 <li>
                   <ul>
                     {Object.entries(personal.skills.content as Array<string>).map(([key, data]) => {
-                      return <li>'{key}' =&gt; {data},</li>;
+                      return <li key={key}>'{key}' =&gt; {data},</li>;
                     })}
                   </ul>
                 </li>
@@ -49,7 +48,7 @@ export default function Bio() {
                 <li>
                   <ul>
                     {Object.entries(personal.contact.content as Array<{link: string, title: string}>).map(([key, data]) => {
-                      return <li>'{key}' =&gt; <a href={data.link} target="_blank">'{data.title}'</a>,</li>;
+                      return <li key={key}>'{key}' =&gt; <a href={data.link} target="_blank">'{data.title}'</a>,</li>;
                     })}
                   </ul>
                 </li>

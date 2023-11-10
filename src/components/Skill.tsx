@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 import WaypointBaffle from "./WaypointBaffle";
-import { Skill } from "../services/types.service";
+import { SkillType } from "../services/types.service";
 
-export default function Skill({title, technologies}: Skill) {
+export default function Skill({title, technologies}: SkillType) {
   return (
     <>
       <div className="skill">{title}</div>

@@ -8,7 +8,7 @@ export type GlobalContext = {
   }
 }
 
-export interface Skill {
+export interface SkillType {
   title: string,
   technologies: Array<string>
 }

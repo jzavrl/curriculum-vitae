@@ -15,7 +15,7 @@ export default function Skills() {
         <SectionTitle title={sections.skills.title} description={sections.skills.description} />
         <ul className="skill-list">
           {Object.entries(skills).map(([skill, technologies]) => {
-            return <li><Skill title={skill} technologies={technologies} /></li>
+            return <li key={skill}><Skill title={skill} technologies={technologies} /></li>
           })}
         </ul>
       </article>
