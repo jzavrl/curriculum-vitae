@@ -1,5 +1,3 @@
-import React from "react";
-
 export type StoryType = 'short' | 'long';
 
 export type GlobalContext = {
