@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import OvalBlue from '../../assets/images/oval-blue.svg';
 import Splash from '../../assets/images/splash.webp';
 import Parallax from 'parallax-js';
@@ -6,7 +6,7 @@ import { DataContext } from "../../context/DataContext";
 import './hero.scss';
 import { Waypoint } from "react-waypoint";
 import Particles from "../Particles";
-import {GlobalContext} from "../../services/types.service";
+import type { GlobalContext } from "../../services/types.service";
 
 export default function Hero() {
   const { parallax } = useContext<GlobalContext>(DataContext);

@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ProfileImage from '../../assets/images/profile.webp';
 import SectionTitle from "../SectionTitle";
 import Section from "../section/Section";
 import Story from "../Story";
 import { DataContext } from "../../context/DataContext";
 import './bio.scss';
-import { GlobalContext } from "../../services/types.service";
+import type { GlobalContext } from "../../services/types.service";
 
 export default function Bio() {
   const { sections: { bio }, personal } = useContext<GlobalContext>(DataContext);

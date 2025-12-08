@@ -1,5 +1,5 @@
-import React, {Dispatch, SetStateAction} from "react";
-import {
+import type { Dispatch, SetStateAction } from "react";
+import type {
   StorySwitcher,
   StoryType,
   ToggleFunction

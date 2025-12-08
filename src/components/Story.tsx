@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import OvalGray from '../assets/images/oval-gray.svg';
 import Switcher from "./Switcher";
 import Description from "./Description";
-import {StoryType, ToggleFunction} from "../services/types.service";
+import type { StoryType, ToggleFunction } from "../services/types.service";
 
 export default function Story() {
   const [showStory, setShowStory] = useState<StoryType>('short');

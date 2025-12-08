@@ -1,4 +1,3 @@
-import React from "react";
 import OvalGray from '../assets/images/oval-gray.svg';
 import WaypointBaffle from "./WaypointBaffle";
 

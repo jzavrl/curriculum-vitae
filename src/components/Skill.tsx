@@ -1,6 +1,5 @@
-import React from "react"
 import WaypointBaffle from "./WaypointBaffle";
-import { SkillType } from "../services/types.service";
+import type {SkillType} from "../services/types.service";
 
 export default function Skill({title, technologies}: SkillType) {
   return (

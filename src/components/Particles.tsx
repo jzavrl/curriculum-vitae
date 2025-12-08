@@ -1,8 +1,8 @@
-import React, {Dispatch, SetStateAction, useContext, useEffect} from "react";
+import {type Dispatch, type SetStateAction, useContext, useEffect} from "react";
 import { DataContext } from "../context/DataContext";
 import 'nodecloud-particleground';
 import './particles.scss';
-import {GlobalContext} from "../services/types.service";
+import type {GlobalContext} from "../services/types.service";
 
 export default function Particles({
   setParticles

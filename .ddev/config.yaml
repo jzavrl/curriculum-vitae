@@ -15,14 +15,14 @@ web_environment: []
 nodejs_version: "22"
 corepack_enable: true
 web_extra_exposed_ports:
-    - name: nodejs
-      container_port: 3000
-      http_port: 2999
-      https_port: 3000
-web_extra_daemons:
-    - name: nodejs
-      command: yarn install && yarn start
-      directory: /var/www/html
+    - name: vite
+      container_port: 5173
+      http_port: 5172
+      https_port: 5173
+#web_extra_daemons:
+#    - name: nodejs
+#      command: yarn install
+#      directory: /var/www/html
 
 # Key features of DDEV's config.yaml:
 

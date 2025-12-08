@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Section from "../section/Section";
 import SectionTitle from "../SectionTitle";
 import Skill from "../Skill";
 import { DataContext } from "../../context/DataContext";
 import './skills.scss';
-import {GlobalContext} from "../../services/types.service";
+import type { GlobalContext } from "../../services/types.service";
 
 export default function Skills() {
   const { skills, sections } = useContext<GlobalContext>(DataContext);
