@@ -4,13 +4,17 @@ import Splash from '../../assets/images/splash.webp';
 import Parallax from 'parallax-js';
 import { DataContext } from "../../context/DataContext";
 import './hero.scss';
-import { Waypoint } from "react-waypoint";
 import Particles from "../Particles";
 import type { GlobalContext } from "../../services/types.service";
+import { useIntersectionObserver } from "../../hooks/useIntersectionObserver";
 
 export default function Hero() {
   const { parallax } = useContext<GlobalContext>(DataContext);
   const [particles, setParticles] = useState<HTMLElement | null>(null);
+  const { ref, entry } = useIntersectionObserver({
+    threshold: 0.4,
+    rootMargin: '-60% 0px 0px 0px'
+  });
 
   const handleClick = (): void => {
     document.getElementById('bio')!.scrollIntoView({
@@ -23,40 +27,41 @@ export default function Hero() {
     return () => scene.destroy();
   }, []);
 
-  const handleWaypointEnter = (): void => {
-    particles?.classList.add('hidden');
-  }
-  const handleWaypointLeave = (): void => {
-    particles?.classList.remove('hidden');
-  }
+  useEffect(() => {
+    if (!particles) return;
+
+    if (entry?.isIntersecting) {
+      particles.classList.add('hidden');
+    } else {
+      particles.classList.remove('hidden');
+    }
+  }, [entry?.isIntersecting, particles]);
 
   return (
-    <Waypoint onEnter={handleWaypointEnter} onLeave={handleWaypointLeave} topOffset="60%">
-      <div className="hero-wrapper">
-        <section id="hero" className="section hero">
-          <ul id="parallax" className="parallax">
-            <li className="layer top-container" data-depth="0.20">
-              <span className="top">Hello, I'm</span>
-            </li>
-            <li className="layer title-container" data-depth="0.30">
-              <h1 className="title">Jan Zavrl</h1>
-            </li>
-            <li className="layer bottom-container" data-depth="0.20">
-              <span className="bottom">and I solve digital problems</span>
-            </li>
-            <li className="layer oval-container" data-depth="0.15">
-              <img className="oval" src={OvalBlue} alt="oval gradient" />
-            </li>
-            <li className="layer splash-container" data-depth="0.10">
-              <img className="splash" src={Splash} alt="splash visual" />
-            </li>
-          </ul>
+    <div className="hero-wrapper" ref={ref as any}>
+      <section id="hero" className="section hero">
+        <ul id="parallax" className="parallax">
+          <li className="layer top-container" data-depth="0.20">
+            <span className="top">Hello, I'm</span>
+          </li>
+          <li className="layer title-container" data-depth="0.30">
+            <h1 className="title">Jan Zavrl</h1>
+          </li>
+          <li className="layer bottom-container" data-depth="0.20">
+            <span className="bottom">and I solve digital problems</span>
+          </li>
+          <li className="layer oval-container" data-depth="0.15">
+            <img className="oval" src={OvalBlue} alt="oval gradient" />
+          </li>
+          <li className="layer splash-container" data-depth="0.10">
+            <img className="splash" src={Splash} alt="splash visual" />
+          </li>
+        </ul>
 
-          <button className="button" onClick={handleClick}>let me show you what I am all about</button>
-        </section>
+        <button className="button" onClick={handleClick}>let me show you what I am all about</button>
+      </section>
 
-        <Particles setParticles={setParticles} />
-      </div>
-    </Waypoint>
+      <Particles setParticles={setParticles} />
+    </div>
   )
 }

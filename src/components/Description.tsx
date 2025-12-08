@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { DataContext } from "../context/DataContext";
 import ReactMarkdown from "react-markdown";
+import rehypeExternalLinks from "rehype-external-links";
 import baffle from 'baffle';
 import type {
   GlobalContext,
@@ -44,7 +45,9 @@ export default function Description({
       id={name}
       className={toggle(['description', name + '-description'], name)}
     >
-      <ReactMarkdown>
+      <ReactMarkdown
+        rehypePlugins={[[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]]}
+      >
         {about[name]}
       </ReactMarkdown>
     </article>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from "./components/sections/Hero";
 import Bio from "./components/sections/Bio";
 import Skills from "./components/sections/Skills";
